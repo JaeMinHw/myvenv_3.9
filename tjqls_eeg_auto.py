@@ -92,19 +92,19 @@ def automate_eeg_data_collection():
 # Create the main Tkinter window
 root = tk.Tk()
 root.title("EEG 데이터 수집")
-root.geometry("250x600")
+root.geometry("250x300")
 
 # Create checkbox variables and labels
 checkbox_vars = [tk.IntVar() for _ in range(7)]
 checkbox_labels = ["7.56", "8.5", "10", "12", "14", "16", "20"]
 
-for i, checkbox_var in enumerate(checkbox_vars):
-    checkbox_var.set(0)
+# for i, checkbox_var in enumerate(checkbox_vars):
+#     checkbox_var.set(0)
 
-# Create checkboxes and pack them
-for i, label_text in enumerate(checkbox_labels):
-    checkbox = tk.Checkbutton(root, text=label_text, variable=checkbox_vars[i])
-    checkbox.pack()
+# # Create checkboxes and pack them
+# for i, label_text in enumerate(checkbox_labels):
+#     checkbox = tk.Checkbutton(root, text=label_text, variable=checkbox_vars[i])
+#     checkbox.pack()
 
 # Start the automation process with a button click
 start_button = tk.Button(root, text="자동화 시작", command=automate_eeg_data_collection)
