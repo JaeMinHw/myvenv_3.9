@@ -79,7 +79,7 @@ checkbox_labels = ["7.56", "8.5", "10", "12", "14", "16"]
 for i, checkbox_var in enumerate(checkbox_vars):
     checkbox_var.set(0)
 
-# Create checkboxes and pack them
+# Create checkboxes and pack thems
 for i, label_text in enumerate(checkbox_labels):
     
     checkbox = tk.Checkbutton(root, text=label_text, variable=checkbox_vars[i])
