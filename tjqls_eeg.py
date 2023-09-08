@@ -74,7 +74,7 @@ root.geometry("250x600")
 
 # Create checkbox variables and labels
 checkbox_vars = [tk.IntVar() for _ in range(7)]
-checkbox_labels = ["7.56", "8.5", "10", "12", "14", "16", "20"]
+checkbox_labels = ["7.56", "8.5", "10", "12", "14", "16"]
 
 for i, checkbox_var in enumerate(checkbox_vars):
     checkbox_var.set(0)
